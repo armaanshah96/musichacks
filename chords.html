@@ -1,64 +1,63 @@
 <html>
     <head>
-        <link href = "../musichacks/page3.css" rel = "stylesheet">
+        <link href = "../musichacks/app.css" rel = "stylesheet">
         <title>Emotive Chords</title>
         <script src="app.js"></script>
 
     </head>
     
     <body>
-        <h1>Customize your chord progression!</h1>
+        <img src="pictures/music-notes-on-staff-clipart-nTBG8dyEc.gif" style="width:550px;height:200px;margin-left:25px; margin-top:0px; margin-bottom:0;">
+        <h1>Customize your chord progression:</h1>
         <div id="button_layout">   
-            <div id="column1">
-                <button type="button" onclick="chords('C','pos1')" id="C">
-                    I - C 
+            <div class="column1">
+                <button type="button" onclick="chords('C','pos1')" id="C" class="button3">
+                    C 
                 </button>
-                <br>
-                <button type="button" onclick="chords('C7','pos1')" id="C7">
-                    C7
+            
+                <button type="button" onclick="chords('G7','pos2')" id="G7" class="button3">
+                    G<sup>7</sup>
                 </button>
-            </div>
-
-            <div id="column2">
-                <button type="button" onclick="chords('G7','pos2')" id="G7">
-                    V - G7
+                
+                <button type="button" onclick="chords('A-minor','pos3')" id="Aminor" class="button3">
+                    A minor
                 </button>
-                <br>
-                <button type="button" onclick="chords('G-major7','pos2')" id="Gmajor7">
-                    
-                    Gmajor7 
+                
+                <button type="button" onclick="chords('F','pos4')" id="F" class="button3">
+                    F
                 </button>
                 
             </div>
 
-            <div id="column3">
-                <button type="button" onclick="chords('A-minor','pos3')" id="Aminor">
-                    VI - A minor
+            <div class="column2">
+                
+                <button type="button" onclick="chords('C7','pos1')" id="C7" class="button3">
+                    C<sup>7</sup>
                 </button>
-                <br>
-                <button type="button" onclick="chords('A7','pos3')" id="A7">
-                    A7
+                
+                <button type="button" onclick="chords('G-major 7','pos2')" id="Gmajor7" class="button3">
+                    G - major 7 
                 </button>
-            </div>
-
-            <div id="column4">
-                <button type="button" onclick="chords('F','pos4')" id="F">
-                    IV - F
+                
+                <button type="button" onclick="chords('A7','pos3')" id="A7" class="button3">
+                    A<sup>7</sup>
                 </button>
-                <br>
-                <button type="button" onclick="chords('F7','pos4')" id="F7">
-                    F7
+                    
+                <button type="button" onclick="chords('F7','pos4')" id="F7" class="button3">
+                    F<sup>7</sup>
                 </button>
+                
             </div>
             
             <div id="chords">
-                <button type=button onclick="playProgression()" id="play">
+                <button type=button onclick="playProgresssion()" id="play" class="playbutton">
                     <img src="play.jpg">
                 </button>
-                <span class="pos" id="pos1">C</span>
-                <span class="pos" id="pos2">G7</span>
-                <span class="pos" id="pos3">Aminor</span>
-                <span class="pos" id="pos4">F</span>
+                    
+                <button class="pos" id="pos1" onclick="playSound2('pos1')">C</button>
+                <button class="pos" id="pos2" onclick="playSound2('pos2')">G7</button>
+                <button class="pos" id="pos3" onclick="playSound2('pos3')">Aminor</button>
+                <button class="pos" id="pos4" onclick="playSound2('pos4')">F</button>
                 
             </div>
             
