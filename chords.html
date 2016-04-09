@@ -1,58 +1,55 @@
 <html>
     <head>
-        <link href = "../musichacks/page3.css" rel = "stylesheet">
+        <link href = "../musichacks/app.css" rel = "stylesheet">
         <title>Emotive Chords</title>
         
     </head>
     
     <body>
-        <h1>Customize your chord progression!</h1>
+        <img src="pictures/music-notes-on-staff-clipart-nTBG8dyEc.gif" style="width:550px;height:200px;margin-left:25px; margin-top:0px; margin-bottom:0;">
+        <h1>Customize your chord progression:</h1>
         <div id="button_layout">   
             <div id="column1">
-                <button type="button" onclick="chords('C','pos1')" id="C">
+                <button type="button" onclick="chords('C','pos1')" id="C" class="button3">
                     I - C 
                 </button>
-                <br>
-                <button type="button" onclick="chords('C7','pos1')" id="C7">
-                    C<sup>7</sup>
+            
+                <button type="button" onclick="chords('G7','pos2')" id="G7" class="button3">
+                    V - G<sup>7</sup>
+                </button>
+                
+                <button type="button" onclick="chords('A-minor','pos3')" id="Aminor" class="button3">
+                    VI - A minor
+                </button>
+                
+                <button type="button" onclick="chords('F','pos4')" id="F" class="button3">
+                    IV - F
                 </button>
             </div>
 
             <div id="column2">
-                <button type="button" onclick="chords('G7','pos2')" id="G7">
-                    V - G<sup>7</sup>
+                <button type="button" onclick="chords('C7','pos1')" id="C7" class="button3">
+                    C<sup>7</sup>
                 </button>
-                <br>
-                <button type="button" onclick="chords('G-major 7','pos2')" id="Gmajor7">
-                    
+                
+                <button type="button" onclick="chords('G-major 7','pos2')" id="Gmajor7" class="button3">
                     G - major 7 
                 </button>
                 
-            </div>
-
-            <div id="column3">
-                <button type="button" onclick="chords('A-minor','pos3')" id="Aminor">
-                    VI - A minor
-                </button>
-                <br>
-                <button type="button" onclick="chords('A7','pos3')" id="A7">
+                <button type="button" onclick="chords('A7','pos3')" id="A7" class="button3">
                     A<sup>7</sup>
                 </button>
-            </div>
-
-            <div id="column4">
-                <button type="button" onclick="chords('F','pos4')" id="F">
-                    IV - F
-                </button>
-                <br>
-                <button type="button" onclick="chords('F7','pos4')" id="F7">
+                    
+                <button type="button" onclick="chords('F7','pos4')" id="F7" class="button3">
                     F<sup>7</sup>
                 </button>
+                
             </div>
+                
             
             <div id="chords">
                 <button type=button onclick="playProgresssion()" id="play">
-                    <img src="../play.jpg">
+                    <img src="play.jpg">
                 </button>
                 <span class="pos" id="pos1">C major</span>
                 <span class="pos" id="pos2">G<sup>7</sup></span>
