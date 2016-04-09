@@ -46,8 +46,8 @@ function playSound(audio_file) {
     console.log("delay happened")
 };
 
-function playSound(id) {
-    var sound = document.getElementById(id).innerHTML + ".m4a";
+function playSound2(p) {
+    var sound = document.getElementById(p).innerHTML + ".m4a";
     var play1 = new Audio("sounds/" + sound);
     play1.play();
 }
