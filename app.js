@@ -22,20 +22,21 @@ function playProgression() {
     var play2 = new Audio("sounds/" + sound2);
     var play3 = new Audio("sounds/" + sound3);
     var play4 = new Audio("sounds/" + sound4);
-    playSound(play1);
-    console.log("sound1");
     setTimeout(function(){
-        playSound(play2);
-        console.log("sound2");
-},3500);
-
-        setTimeout(function(){playSound(play3);console.log("sound3");},3500);
-
-    
-    setTimeout(function(){playSound(play4);console.log("sound4");},3500);
-
-    
-
+        playSound(play1);
+        console.log("sound1");
+        setTimeout(function(){
+            playSound(play2);
+            console.log("sound2");
+            setTimeout(function(){
+                playSound(play3);
+                console.log("sound3");
+                setTimeout(function(){
+                    playSound(play4);
+                    console.log("sound4");},1000);
+        }, 2000);
+        }, 2000); 
+    }, 1000);
 };
 
 
@@ -44,3 +45,9 @@ function playSound(audio_file) {
     audio_file.play();
     console.log("delay happened")
 };
+
+function playSound(id) {
+    var sound = document.getElementById(id).innerHTML + ".m4a";
+    var play1 = new Audio("sounds/" + sound);
+    play1.play();
+}
