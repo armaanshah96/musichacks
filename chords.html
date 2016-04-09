@@ -2,50 +2,66 @@
     <head>
         <link href = "../musichacks/page3.css" rel = "stylesheet">
         <title>Emotive Chords</title>
+        
     </head>
     
     <body>
         <h1>Customize your chord progression!</h1>
         <div id="button_layout">   
             <div id="column1">
-                <button type="button">
+                <button type="button" onclick="chords('C','pos1')" id="C">
                     I - C 
                 </button>
                 <br>
-                <button type="button">
+                <button type="button" onclick="chords('C7','pos1')" id="C7">
                     C<sup>7</sup>
                 </button>
             </div>
 
             <div id="column2">
-                <button type="button">
-                    V - G 
+                <button type="button" onclick="chords('G7','pos2')" id="G7">
+                    V - G<sup>7</sup>
                 </button>
                 <br>
-                <button type="button">
-                    G<sup>7</sup>
+                <button type="button" onclick="chords('G-major 7','pos2')" id="Gmajor7">
+                    
+                    G - major 7 
                 </button>
+                
             </div>
 
             <div id="column3">
-                <button type="button">
-                    VI - A 
+                <button type="button" onclick="chords('A-minor','pos3')" id="Aminor">
+                    VI - A minor
                 </button>
                 <br>
-                <button type="button">
+                <button type="button" onclick="chords('A7','pos3')" id="A7">
                     A<sup>7</sup>
                 </button>
             </div>
 
             <div id="column4">
-                <button type="button">
+                <button type="button" onclick="chords('F','pos4')" id="F">
                     IV - F
                 </button>
                 <br>
-                <button type="button">
+                <button type="button" onclick="chords('F7','pos4')" id="F7">
                     F<sup>7</sup>
                 </button>
             </div>
+            
+            <div id="chords">
+                <button type=button onclick="playProgresssion()" id="play">
+                    <img src="../play.jpg">
+                </button>
+                <span class="pos" id="pos1">C major</span>
+                <span class="pos" id="pos2">G<sup>7</sup></span>
+                <span class="pos" id="pos3">A minor</span>
+                <span class="pos" id="pos4">F major</span>
+                
+            </div>
+            
+            
         </div> 
     </body>
 </html>
