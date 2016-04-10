@@ -18,6 +18,11 @@ function playProgression() {
     var sound2 = aud2 + ".m4a";
     var sound3 = aud3 + ".m4a";
     var sound4 = aud4 + ".m4a";
+    console.log(sound1)
+    console.log(sound2)
+    console.log(sound3)
+    console.log(sound4)
+
     var play1 = new Audio("sounds/" + sound1);
     var play2 = new Audio("sounds/" + sound2);
     var play3 = new Audio("sounds/" + sound3);
@@ -33,10 +38,10 @@ function playProgression() {
                 console.log("sound3");
                 setTimeout(function(){
                     playSound(play4);
-                    console.log("sound4");},1000);
+                    console.log("sound4");},2000);
         }, 2000);
         }, 2000); 
-    }, 1000);
+    }, 2000);
 };
 
 

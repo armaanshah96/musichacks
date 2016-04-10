@@ -12,7 +12,7 @@ h1 {
 
 #button1 {
     background-color: lightsgrey;
-    font-family:serif;
+    font-family:'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
     text-align: center;
     font-size: 1.8em;
     font-weight: 100;
@@ -27,7 +27,7 @@ h1 {
 }
 
 #next {
-    background-color: lightsgrey;
+    background-color: lightgrey;
     font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
     text-align: center;
     text-decoration: none;
@@ -112,6 +112,7 @@ button:focus {
     cursor: pointer;
     background-color: #8c8c8c;
     text-decoration: none;
+    outline: none;
 }
 
 .playbutton {
@@ -125,7 +126,7 @@ button:focus {
     width: 100px;
     border-radius: 10px;
     margin-left: auto;
-    margin-right: 50px;
+    margin-right: auto;
     margin-top: 50px;
     margin-bottom: 15px;
 }
