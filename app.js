@@ -38,10 +38,10 @@ function playProgression() {
                 console.log("sound3");
                 setTimeout(function(){
                     playSound(play4);
-                    console.log("sound4");},2000);
-        }, 2000);
-        }, 2000); 
-    }, 2000);
+                    console.log("sound4");},900);
+        }, 1700);
+        }, 900); 
+    }, 100);
 };
 
 
